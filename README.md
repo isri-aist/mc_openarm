@@ -16,7 +16,23 @@ experiments with the real platform.
 - [xacro](https://github.com/ros/xacro) (`ros-<distro>-xacro`): the URDFs are
   generated from the xacro files of openarm_description at build time
 
-## Build instructions
+## Usage
+
+### Nix instructions
+
+You can use this project with Nix:
+
+- Build  : `nix build .#mc-openarm`
+- Develop: `nix develop .#mc-openarm`
+- Run and vizualise:
+  ```
+  nix develop .#mc-rtc-superbuild-mc-openarm
+  # use mc-rtc-magnum / mc_robot_visualization / mc_rtc_ticker in this shell
+  ```
+
+### Build from source instructions
+
+Install the pre-requisite packages or enter the `nix develop .#mc-openarm` environment.
 
 ```
 $ source /opt/ros/<distro>/setup.bash
